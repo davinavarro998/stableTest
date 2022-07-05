@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stable Coin</title>
+</head>
+<body>
+    <header>
+        <h2>Stable Coin = <span id="stable_coin_address"></span></h2>
+        <h2>Vault = <span id="vault_address"></span></h2>
+    </header>
+    <main>
+        <button id="connect_btn">Connect wallet</button>
+        <div class="container">
+            <button id="buy_btn">Buy Tokens</button>
+            <input id="stc_input" type="number" step="0.01" min="0" placeholder="amount of ether">
+        </div>
+        <p>You can either click on the Buy Tokens button above or send ETH to the Vault address</p>
+        <p>At this moment, 1 ether can buy US$ <span id="amount_of_dollars"></span></p>
+    </main>
+    <footer>
+        <p>&copy;2nd Market</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js"
+        integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
